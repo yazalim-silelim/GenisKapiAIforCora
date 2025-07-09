@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenişKapı AI | Yapım Aşamasında</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #10b981;
+            --secondary: #34d399;
+            --dark: #064e3b;
+            --darker: #022c22;
+            --light: #ecfdf5;
+            --gray: #6b7280;
+            --card-bg: rgba(16, 185, 129, 0.1);
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        body {
+            background-color: var(--darker);
+            color: var(--light);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: radial-gradient(circle at 25% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+        }
+        
+        .construction-container {
+            max-width: 800px;
+            padding: 40px;
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+        }
+        
+        .logo-text {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .construction-icon {
+            font-size: 5rem;
+            color: var(--primary);
+            margin: 30px 0;
+            animation: pulse 2s infinite ease-in-out;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--light);
+        }
+        
+        p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .progress-container {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            margin: 30px 0;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 10px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            width: 65%;
+            border-radius: 20px;
+            transition: width 0.5s ease;
+        }
+        
+        .progress-text {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @media (max-width: 768px) {
+            .construction-container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .construction-icon {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="construction-container">
+        <div class="logo">
+            <i class="fas fa-door-open logo-icon"></i>
+            <span class="logo-text">GenişKapı AI</span>
+        </div>
+        
+        <div class="construction-icon">
+            <i class="fas fa-tools"></i>
+        </div>
+        
+        <h1>Yapım Aşamasında</h1>
+        
+        <p>
+            Cora yapay zeka asistanımızı daha da geliştirmek için çalışıyoruz.
+            Yakında sizlerle olacağız! Gelişmelerden haberdar olmak için bizi takip edin.
+        </p>
+        
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+            <div class="progress-text">%65 Tamamlandı</div>
+        </div>
+        
+         <a href="https://github.com/yazalim-silelim" class="github-button" target="_blank">
+            <i class="fab fa-github"></i>
+            GitHub'da Görüntüle
+        </a>
+    </div>
+</body>
+</html>
